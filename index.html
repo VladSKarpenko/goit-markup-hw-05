@@ -554,13 +554,14 @@
           <form class="footer-form">
             <input
               class="footer-form-input"
+              name="user_email"
               type="email"
               aria-label="email"
               placeholder="E-mail"
               required
             />
             <button class="footer-form-btn" type="submit">
-              <p class="subscribe-btn-text">Subscribe</p>
+              Subscribe
               <svg class="subscribe-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe"></use>
               </svg>
@@ -572,7 +573,7 @@
 
     <!-- Modal view -->
     <div class="backdrop is-open">
-      <div class="modal">
+      <div class="modal" id="modal">
         <button type="button" class="modal-btn" aria-label="Close modal button">
           <svg class="modal-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#close"></use>
@@ -601,7 +602,7 @@
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
-                type="phone"
+                type="tel"
                 id="user_phone"
                 name="user_phone"
               />
@@ -628,7 +629,6 @@
             <label for="user_text" class="modal-form-label">Comment</label>
             <textarea
               class="modal-form-comment"
-              type="text"
               id="user_text"
               name="user_text"
               placeholder="Text input"
